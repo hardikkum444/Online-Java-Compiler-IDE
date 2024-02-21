@@ -1,4 +1,5 @@
-# Java HTTP and Socket Server for Compiling User-Provided Java Code
+# Java HTTP and Socket Server for Compiling User-Provided Java Code <br>
+(hosting online VM pending)
 
 <p align="center">
   <img src="images/img1.png" alt="Image 1">
@@ -10,6 +11,11 @@
 
 This repository contains a Java program that serves as an HTTP and socket server capable of compiling and executing user-provided Java code remotely. The server offers a simple and secure way for users to submit Java code snippets, which are then compiled and executed on the server-side environment. This README provides an overview of the project, its features, usage instructions, technologies used, and how to contribute.
 
+## Duration 
+
+This project took me a total of 4-5 days to make.<br>
+The first 3 days were used to hard code the backend using java, and the next 1-2 days were utilised in cleaning the code and also making a minimal frontend
+
 ## Key Features
 
 - **HTTP and Socket Server**: Implements both HTTP and socket communication protocols, allowing users to choose their preferred method of interaction.
@@ -18,9 +24,8 @@ This repository contains a Java program that serves as an HTTP and socket server
   
 - **Code Execution**: Executes the compiled Java code and returns the output to the user.
   
-- **Security Measures**: Implements basic security measures to restrict file system access and prevent unauthorized operations.
+- **ACE code editor**: Has been embedded to provide features like text highlighting, auto-completion, find text functionality etc etc
   
-- **Concurrent Handling**: Supports concurrent handling of HTTP requests and socket connections for efficient and responsive performance.
 
 ## Technologies Used
 
@@ -30,13 +35,12 @@ This repository contains a Java program that serves as an HTTP and socket server
   
 - **Socket Programming**: Utilized Java's socket API for establishing socket connections and communication.
   
-- **Security Manager**: Implemented a custom security manager to enforce security policies and restrict file system access.
+- **IOutils.class**: Implemented a custom class to provide utility to the socket server
   
-- **Concurrency**: Employed multi-threading and concurrency techniques to handle multiple client connections concurrently.
 
 ## Usage
 
-1. **Running the Server**: Execute the `improve.java` file to start the server on the desired host and port.
+1. **Running the Server**: Execute the `ServerLogic.java` file to start the server on the desired host and port.
    
 2. **Submitting Java Code**: Users can submit Java code either via HTTP POST requests or by establishing socket connections.
    
@@ -44,9 +48,9 @@ This repository contains a Java program that serves as an HTTP and socket server
 
 ## Repository Structure
 
-- `improve.java`: The main Java source file containing the server implementation.
+- `ServerLogic.java`: The main Java source file containing the server implementation.
   
-- `IOutils.java`: Utility class providing methods for creating input and output streams for sockets and processes.
+- `IOutils.class`: Utility class providing methods for creating input and output streams for sockets and processes.
 
 ## Contributing
 
