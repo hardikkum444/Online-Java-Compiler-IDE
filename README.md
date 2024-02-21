@@ -1,5 +1,11 @@
 # Java HTTP and Socket Server for Compiling User-Provided Java Code
 
+<p align="center">
+  <img src="images/img1.png" alt="Image 1">
+  <img src="images/img2.png" alt="Image 2">
+</p>
+
+
 ## Overview
 
 This repository contains a Java program that serves as an HTTP and socket server capable of compiling and executing user-provided Java code remotely. The server offers a simple and secure way for users to submit Java code snippets, which are then compiled and executed on the server-side environment. This README provides an overview of the project, its features, usage instructions, technologies used, and how to contribute.
@@ -50,7 +56,3 @@ Contributions to this project are welcome! If you find any bugs, have feature re
 
 This project is licensed under the [MIT License](link-to-license). You are free to use, modify, and distribute the code as per the terms of the license.
 
-<p align="center">
-  <img src="images/img1.png" alt="Image 1">
-  <img src="images/img2.png" alt="Image 2">
-</p>
