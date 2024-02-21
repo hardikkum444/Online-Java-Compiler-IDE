@@ -51,6 +51,6 @@ Contributions to this project are welcome! If you find any bugs, have feature re
 This project is licensed under the [MIT License](link-to-license). You are free to use, modify, and distribute the code as per the terms of the license.
 
 <p align="center">
-  <img src="img1.png" alt="Image 1">
-  <img src="img2.png" alt="Image 2">
+  <img src="images/img1.png" alt="Image 1">
+  <img src="images/img2.png" alt="Image 2">
 </p>
