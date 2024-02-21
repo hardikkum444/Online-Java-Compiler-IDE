@@ -1,5 +1,6 @@
 # Java HTTP and Socket Server for Compiling User-Provided Java Code <br>
-(hosting online VM pending)
+(hosting online VM pending)<br>
+(website yet to be deployed)
 
 <p align="center">
   <img src="images/img1.png" alt="Image 1">
