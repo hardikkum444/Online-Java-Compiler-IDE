@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('evo-planet-wj-1920x1080.jpg'); */
+    background-color: #06011b;
+    /* background-color: rgba(5, 5, 5, 0.8); */
+    color: #f1efef;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(34, 33, 33, 0.2);
+}
+.title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.editor-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.editor {
+    width: 47%;
+    height: 790px;
+    padding: 10px;
+    border: 1px solid #f3f1f7;
+    border-radius: 5px;
+    /* background-color: rgba(3, 3, 3, 0.8); */
+    background-color: #111111;
+    resize: vertical;
+    color: #fff;
+    font-size: 18px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Courier New', monospace;
+}
+#outputEditor {
+    resize: none;
+}
+#runButton {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #06c40d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+#runButton:hover {
+    background-color: #a0eca0;
+}
+
+.credit {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #eee8e8;
+    animation: slideInFromTop 1s forwards;
+}
