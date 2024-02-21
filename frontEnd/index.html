@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalistic-Compiler</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"></div>
+        <div class="editor-container">
+            <div class="editor" id="inputEditor">// Give input in the form of (//*input) at the end</div>
+            <div class="editor" id="outputEditor" readonly></div>
+        </div>
+        <button id="runButton" onclick="sendRequest()">Run</button>
+        <div class="credit"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
