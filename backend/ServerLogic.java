@@ -108,7 +108,8 @@ public class ServerLogic {
                     String command = "javac -d . " + fileName + ".java";
                     Process compile = Runtime.getRuntime().exec(command);
 
-                    BufferedReader errorReader = IOutils.createReader(compile);
+                    // BufferedReader errorReader = IOutils.createReader(compile);
+                    BufferedReader errorReader = new BufferedReader(new InputStreamReader(compile.getErrorStream()));
                     StringBuilder compileError = new StringBuilder();
                     String error = "";
 
