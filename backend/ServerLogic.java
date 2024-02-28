@@ -29,13 +29,38 @@ public class ServerLogic {
                 System.out.println("Client connected: " + client.getInetAddress());
 
                 BufferedReader reader = IOutils.createReader(client);
-                PrintWriter writer = IOutils.createWriter(client);
+                PrintWriter writer = new PrintWriter(new OutputStreamWriter(client.getOutputStream()));
 
                 String person = "";
                 String output = "";
                 String fileName = "";
                 String input = "";
                 boolean isFin = false;
+
+                //---------------------------------NEW
+
+				String name = reader.readLine();
+				String user = "";
+
+				if(name.equals("")) {
+					break;
+				}
+
+				if(name.contains("GET")) {
+
+					int startIndex = name.indexOf("/");
+					int endIndex = name.indexOf(" HTTP");
+					user = name.substring(startIndex + 1, endIndex);
+					System.out.println();
+					System.out.println("User's name is --> "+user);
+					System.out.println();
+					
+				}
+
+
+
+
+                //------------------------------------NEW
 
                 StringBuilder requestBuilder = new StringBuilder();
                 String line;
@@ -108,7 +133,7 @@ public class ServerLogic {
                     String command = "javac -d . " + fileName + ".java";
                     Process compile = Runtime.getRuntime().exec(command);
 
-                    // BufferedReader errorReader = IOutils.createReader(compile);
+                    // BufferedReader errorReader = IOutils.createReader(compile6);
                     BufferedReader errorReader = new BufferedReader(new InputStreamReader(compile.getErrorStream()));
                     StringBuilder compileError = new StringBuilder();
                     String error = "";
@@ -223,35 +248,3 @@ public class ServerLogic {
     }    
     
 }
-
-
-
-
-
-// public class CustomSecurityManager extends SecurityManager {
-//     private final String allowedDirectory;
-
-//     public CustomSecurityManager(String allowedDirectory) {
-//         this.allowedDirectory = allowedDirectory;
-//     }
-
-//     @Override
-//     public void checkRead(String file) {
-//         if (!file.startsWith(allowedDirectory)) {
-//             throw new SecurityException("Read access denied for file: " + file);
-//         }
-//     }
-
-//     @Override
-//     public void checkWrite(String file) {
-//         if (!file.startsWith(allowedDirectory)) {
-//             throw new SecurityException("Write access denied for file: " + file);
-//         }
-//     }
-
-//     @Override
-//     public void checkConnect(String host, int port) {
-//         throw new SecurityException("Network access denied");
-//     }
-// }
-
