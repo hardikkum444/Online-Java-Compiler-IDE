@@ -58,6 +58,8 @@ The first 3 days were used to hard code the backend using java, and the next 1-2
 Contributions to this project are welcome! If you find any bugs, have feature requests, or want to contribute improvements, please submit a pull request. Make sure to adhere to the project's coding standards and guidelines.
 
 ## License
+## License
 
-This project is licensed under the [MIT License](link-to-license). You are free to use, modify, and distribute the code as per the terms of the license.
+This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+
 
